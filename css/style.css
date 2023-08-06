@@ -165,23 +165,6 @@ body{
     transform: scale(2);
 }
 
-/* .section__title h1{
-    display: flex;
-    color: #c1300a;
-    font-size: 2.5rem;
-    align-items: end;
-}
-
-.section__title h1 span{
-    color: #233f70;
-}
-.section__title p{
-    display: flex;
-    font-family: var(--open-sans);
-    align-items: start;
-    font-size: 1rem;
-    padding: 0 50px;
-} */
 
 .section__img{
     border-radius: 30%;
