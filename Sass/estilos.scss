@@ -40,7 +40,25 @@ body {
 }
 
 
+// [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+//     cursor: pointer;
+// }
+.carousel-control-prev {
+    left: 0;
+}
+.carousel-control-next, .carousel-control-prev {
+  width: 20%;
+  justify-content: space-evenly;
+  // background-color: #82afb3;
 
+}
+
+.btnprev{
+  border: 10px solid #cbcbcb;
+  border-radius: 30%;
+  padding: 50px;
+  background-color: black;
+}
 .section {
   height: 100vh;
   // padding-top: 86px;
@@ -51,12 +69,12 @@ body {
   height: 100vh;
 }
 .sectionInicio {
-  /* padding-top: 86px; */
+  /* padding-top: 56px; */
   transition: transform 1s ease;
   .section__containerInicio {
     justify-content: center;
     align-items: center;
-    /* padding-top: 86px; */
+    padding-top: 56px;
     background: url(../images/fondo.png);
     background-color: #72dffe;
     background-repeat: no-repeat;
@@ -129,13 +147,14 @@ body {
   box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.3);
   background-image: url(../images/luga3.jpg);
   background-repeat: no-repeat;
+  padding-top: 56px;
   /* background-position: -500px -200px ; */
   background-size: cover;
 }
 
 .section__containerSocial {
   /* background-color: #2d4839; */
-  // padding-top: 86px;
+  padding-top: 56px;
   @extend .section__containerInicio;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
 }
@@ -166,11 +185,22 @@ a {
 
 .section__containerMenu {
   background-color: #f9eddf;
-  // padding-top: 86px;
+  padding-top: 56px;
   @extend .section__containerInicio;
-  display: block;
+  flex-direction: column;
+  justify-content: space-evenly;
   box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.3);
   background-image: url(../images/trace.svg);
+}
+
+.section__tabla{
+  @extend .section__containerMenu;
+  padding: 0;
+
+  transform: scaleX(-1);
+  h2{
+    transform: scaleX(-1);
+  }
 }
 
 /* Social Network */
@@ -197,12 +227,21 @@ a {
 }
 
 table {
-  width: 100%;
+  margin: 0 auto;
+  width: 70%;
   border-collapse: collapse;
+  transform: scaleX(-1);
+  tr{
+    text-align: center;
+    th{
+      text-align: center;
+    }
+  }
 }
 
 th, td {
   padding: 8px;
+  background-color: #f2f2f2ab;
   border-bottom: 1px solid #ddd;
 }
 
@@ -212,7 +251,7 @@ th {
 }
 
 tr:hover {
-  background-color: #f5f5f5;
+  background-color: #cbcbcb;
 }
 
 @keyframes scale-down-center {
@@ -222,4 +261,9 @@ tr:hover {
   100% {
     transform: scale(.9);
   }
+}
+
+
+.section__containerAbout{
+    padding-top: 56px;
 }
