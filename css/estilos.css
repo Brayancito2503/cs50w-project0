@@ -162,6 +162,20 @@ body {
   /* background-position: -500px -200px ; */
   background-size: cover;
 }
+.section__containerUbicacion .ubication__title {
+  color: white;
+  font-family: var(--lumanosimo);
+  text-shadow: 10px 1PX 10px black;
+  font-size: 3rem;
+  text-align: center;
+}
+.section__containerUbicacion .ubication__imgs {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  /* gap: 2rem; */
+}
 
 .section__containerSocial {
   /* background-color: #2d4839; */
@@ -172,17 +186,6 @@ body {
 .imgs {
   width: 100%;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4196078431);
-}
-
-.ubication__imgs {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  /* gap: 2rem; */
-}
-.ubication__imgs .ubication__img {
-  width: 30%;
 }
 
 a {
@@ -211,13 +214,6 @@ a {
 /* Social Network */
 .social__img {
   width: 35%;
-}
-
-.ubication__title {
-  color: white;
-  font-family: var(--lumanosimo);
-  text-shadow: 10px 1PX 10px black;
-  font-size: 3rem;
 }
 
 .inicio_boton {
@@ -269,6 +265,23 @@ tr:hover {
 }
 .section__containerAbout {
   padding-top: 56px;
+}
+
+@media (max-width: 768px) {
+  .section__containerUbicacion .ubication__title {
+    font-size: 2rem;
+  }
+  .mapa {
+    width: 90%;
+  }
+}
+@media (max-width: 576px) {
+  .section__containerUbicacion .ubication__title {
+    font-size: 1.5rem;
+  }
+  .section__containerUbicacion {
+    justify-content: space-evenly;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
