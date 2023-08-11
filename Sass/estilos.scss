@@ -207,11 +207,13 @@ body {
     padding: 0;
     height: 100vh;
     overflow: auto;
+    padding-top: 66px;
     h2{
         font-weight: 700;
         text-align: center;
     }
     .section__tabla{
+        padding-top: 30px;
         transform: scaleX(-1);
       }
 }
@@ -344,8 +346,9 @@ tr:hover {
         width: 90%;
     }
 
-    .section__tabla{
+    .sectionTabla{
         h2{
+            padding-top: 10px;
             text-align: center;
         }
     }
