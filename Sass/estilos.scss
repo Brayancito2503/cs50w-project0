@@ -201,6 +201,7 @@ a {
 .section__tabla{
   @extend .section__containerMenu;
   padding: 0;
+  height: 100vh;;
 
   transform: scaleX(-1);
   h2{
@@ -263,6 +264,11 @@ tr:hover {
   }
 }
 
+.caja
+{
+    padding: 3rem;
+    width: 75%;
+}
 
 .section__containerAbout{
     padding-top: 56px;
@@ -287,6 +293,21 @@ tr:hover {
 
     .section__containerUbicacion{
         justify-content: space-evenly;
+    }
+
+    .btnprev{
+        border: 5px solid #cbcbcb;
+        padding: 0;
+    }
+
+    .caja{
+        width: 100%;
+        padding: 0;
+    }
+
+    .section__containerMenu{
+        justify-content: center;
+        gap: 100px;
     }
     
 }
