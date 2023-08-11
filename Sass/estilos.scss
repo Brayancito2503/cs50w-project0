@@ -274,6 +274,18 @@ tr:hover {
     padding-top: 56px;
 }
 
+@media (max-width: 992px) {
+    h2{
+        color: green;
+    }
+
+    .btnprev{
+        border: 5px solid #cbcbcb;
+        padding: 0;
+    }
+    
+}
+
 @media (max-width: 768px) {
     .section__containerUbicacion .ubication__title {
         font-size: 2rem;
