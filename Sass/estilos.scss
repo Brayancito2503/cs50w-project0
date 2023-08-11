@@ -283,6 +283,9 @@ tr:hover {
         width: 90%;
         // height: 250%;
     }
+    h2{
+        color: blue;
+    }
  
 }
 
@@ -307,7 +310,10 @@ tr:hover {
 
     .section__containerMenu{
         justify-content: center;
-        gap: 100px;
+        // gap: 100px;
     }
     
+    h2{
+        color: red;
+    }
 }

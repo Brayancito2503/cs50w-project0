@@ -280,6 +280,9 @@ tr:hover {
   .mapa {
     width: 90%;
   }
+  h2 {
+    color: blue;
+  }
 }
 @media (max-width: 576px) {
   .section__containerUbicacion .ubication__title {
@@ -298,7 +301,9 @@ tr:hover {
   }
   .section__containerMenu, .section__tabla {
     justify-content: center;
-    gap: 100px;
+  }
+  h2 {
+    color: red;
   }
 }
 
