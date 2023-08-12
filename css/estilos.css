@@ -251,16 +251,16 @@ body {
   animation: scale-down-center 1s alternate-reverse infinite;
 }
 
-table {
+#tabla {
   margin: 0 auto;
   width: 70%;
   border-collapse: collapse;
   transform: scaleX(-1);
 }
-table tr {
+#tabla tr {
   text-align: center;
 }
-table tr th {
+#tabla tr th {
   text-align: center;
 }
 
