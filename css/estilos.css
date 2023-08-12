@@ -114,11 +114,11 @@ body {
 .sectionInicio .section__containerInicio, .sectionInicio .section__containerMenu, .sectionInicio .sectionTabla, .sectionInicio .section__containerSocial, .sectionInicio .section__containerUbicacion {
   justify-content: center;
   align-items: center;
-  padding-top: 56px;
   background: url(../images/fondo.png);
   background-color: #72dffe;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: bottom;
   animation: blur-in 0.8s linear both;
 }
 .sectionInicio .section__containerInicio .hero__logo1, .sectionInicio .section__containerMenu .hero__logo1, .sectionInicio .sectionTabla .hero__logo1, .sectionInicio .section__containerSocial .hero__logo1, .sectionInicio .section__containerUbicacion .hero__logo1 {
@@ -213,7 +213,8 @@ body {
   padding: 0;
   height: 100vh;
   overflow: auto;
-  padding-top: 66px;
+  padding-top: 76px;
+  text-align: center;
 }
 .sectionTabla h2 {
   font-weight: 700;
@@ -303,6 +304,10 @@ tr:hover {
   color: wheat;
 }
 
+.section__containerAbout {
+  padding-top: 70px;
+}
+
 @media (max-width: 768px) {
   .section__containerUbicacion .ubication__title {
     font-size: 2rem;
@@ -333,9 +338,12 @@ tr:hover {
   .menu_boton {
     width: 90%;
   }
-  .sectionTabla h2 {
-    padding-top: 10px;
-    text-align: center;
+  .sectionInicio .section__containerInicio .hero__logo1, .sectionInicio .section__containerUbicacion .hero__logo1, .sectionInicio .section__containerSocial .hero__logo1, .sectionInicio .section__containerMenu .hero__logo1, .sectionInicio .sectionTabla .hero__logo1 {
+    width: 80%;
+  }
+  .sectionInicio .section__containerInicio .inicio_boton, .sectionInicio .section__containerUbicacion .inicio_boton, .sectionInicio .section__containerSocial .inicio_boton, .sectionInicio .section__containerMenu .inicio_boton, .sectionInicio .sectionTabla .inicio_boton {
+    position: initial;
+    width: 100%;
   }
 }
 
